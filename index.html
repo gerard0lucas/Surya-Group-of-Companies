@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya Group of Companies - Premium Real Estate Investment</title>
-    <meta name="description"
-        content="Surya Group of Companies offers premium real estate investment opportunities across residential plots, farmlands, apartments, and townships.">
+    <title>Our Projects - Surya Group of Companies</title>
+    <meta name="description" content="Explore our diverse portfolio of premium real estate projects including villa plots, farmlands, apartments, and townships.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./animate.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 
-
-
 <body>
-    <header class="header">
+
+
+    <header class="header scrolled">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="https://api.iconify.design/lucide:building-2.svg" alt="Logo" width="24" height="24">
-                    <span>Surya Group</span>
+                    <img src="./assets/mainlogo.png" alt="Logo" width="250">
                 </div>
                 <nav class="desktop-nav">
-                    <a href="#home">Home</a>
-                    <a href="#about-us">About Us</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#investments">Investments</a>
-                    <a href="#contact">Contact</a>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="investments.html">Investments</a>
+                    <a href="contact.html">Contact</a>
                 </nav>
                 <button class="mobile-menu-btn" aria-label="Toggle menu">
                     <span></span>
@@ -40,22 +36,15 @@
             </div>
         </div>
         <nav class="mobile-nav">
-            <a href="#home">Home</a>
-            <a href="#about-us">About Us</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="#investments">Investments</a>
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="projects.html">Projects</a>
+            <a href="investments.html">Investments</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <script>
-        const header = document.querySelector('.header');
-        const menuBtn = document.querySelector('.mobile-menu-btn');
-    
-        menuBtn.addEventListener('click', () => {
-            header.classList.toggle('active');
-        });
-    </script>
+  
 
     <main>
         <section id="home" class="hero">
@@ -92,7 +81,12 @@
                     <div class="about-text">
                         <div class="mission-vision">
                             <div class="mv-item">
-                                <h3>Our Mission</h3>
+                                <h3>Our <span>Mission</span></h3>
+                                <p>To be the one platform for all real estate solutions, connecting investors with
+                                    opportunities that deliver exceptional value and growth.</p>
+                            </div>
+                            <div class="mv-item">
+                                <h3>Our <span>Mission</span></h3>
                                 <p>To be the one platform for all real estate solutions, connecting investors with
                                     opportunities that deliver exceptional value and growth.</p>
                             </div>
@@ -137,12 +131,12 @@
             </div>
         </section>
 
-        <section id="projects" class="projects">
+
+        <section id="projects" class="projects" style="padding-top: 8rem;">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our <span>Projects</span></h2>
-                    <p>From residential villa plots to integrated townships, explore our diverse portfolio of premium
-                        real estate developments.</p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our <span class="text-amber-600">Projects</span></h1>
+                    <p class="text-lg text-gray-600">From residential villa plots to integrated townships, explore our diverse portfolio of premium real estate developments.</p>
                 </div>
                 <div class="project-filters">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
@@ -293,13 +287,9 @@
                                     <p>info@suryagroup.com</p>
                                 </div>
                             </div>
+                           
                         </div>
-                        <div class="map-container">
-                            <h3>Find Us</h3>
-                            <div class="map-placeholder">
-                                <p>Interactive map would be displayed here</p>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -378,12 +368,13 @@
             </div>
         </div>
     </footer>
+    <script src="../script.js"></script>
 
     <button class="scroll-to-top" aria-label="Scroll to top">
         <img src="https://api.iconify.design/lucide:chevron-up.svg" alt="Up" width="24" height="24">
     </button>
 
-    <script src="script.js"></script>
+    
 </body>
 
 </html>
