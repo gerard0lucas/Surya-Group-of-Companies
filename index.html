@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Group of Companies - Premium Real Estate Investment</title>
+    <meta name="description"
+        content="Surya Group of Companies offers premium real estate investment opportunities across residential plots, farmlands, apartments, and townships.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./animate.css">
+</head>
+
+
+
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://api.iconify.design/lucide:building-2.svg" alt="Logo" width="24" height="24">
+                    <span>Surya Group</span>
+                </div>
+                <nav class="desktop-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#investments">Investments</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#investments">Investments</a>
+        </nav>
+    </header>
+
+    <script>
+        const header = document.querySelector('.header');
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+    
+        menuBtn.addEventListener('click', () => {
+            header.classList.toggle('active');
+        });
+    </script>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="heroflex">
+                    <div style="text-align: center;" class="hero-content animate-fade-in">
+                        <img class="bnr-logo" src="./assets/l.png" alt="">
+                        <h1 class="animate-slide-up">Invest in <span>Tomorrow's</span> Skyline Today</h1>
+                        <p class="animate-slide-up delay-1">Discover premium real estate opportunities crafted by Surya Group of Companies, where smart
+                            investments meet exceptional living.</p>
+                        <div class="hero-buttons animate-slide-up delay-2">
+                            <a href="#projects" class="btn btn-primary">
+                                Projects
+                                <img src="https://api.iconify.design/lucide:arrow-right.svg" alt="Arrow" width="20" height="20">
+                            </a>
+                            <a href="#contact" class="btn btn-outline">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="about-us" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About <span>Surya Group</span></h2>
+                    <p>Built on the vision of promoting smart, secure, and scalable investments. With a presence in
+                        various segments of the real estate industry, we deliver end-to-end solutions to individual
+                        investors, homebuyers, and businesses.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="mission-vision">
+                            <div class="mv-item">
+                                <h3>Our Mission</h3>
+                                <p>To be the one platform for all real estate solutions, connecting investors with
+                                    opportunities that deliver exceptional value and growth.</p>
+                            </div>
+                            <div class="mv-item">
+                                <h3>Our Vision</h3>
+                                <p>To enable smart investment opportunities by ensuring minimal input with maximum
+                                    benefit, creating spaces that enrich lives and communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg"
+                            alt="Modern building architecture">
+                    </div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="https://api.iconify.design/lucide:award.svg" alt="Expertise" class="feature-icon">
+                        <h4>Deep Industry Expertise</h4>
+                        <p>With decades of collective experience, our team navigates the complexities of real estate
+                            with confidence.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://api.iconify.design/lucide:eye.svg" alt="Transparency" class="feature-icon">
+                        <h4>Transparent Processes</h4>
+                        <p>Every step is documented and visible, ensuring you're always informed about your investment
+                            journey.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://api.iconify.design/lucide:map.svg" alt="Location" class="feature-icon">
+                        <h4>Strategic Locations</h4>
+                        <p>We identify and develop properties in high-growth areas with exceptional investment
+                            potential.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://api.iconify.design/lucide:bar-chart.svg" alt="Returns" class="feature-icon">
+                        <h4>Maximized Returns</h4>
+                        <p>Our expert analysis and market timing ensure optimal value appreciation for your investments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our <span>Projects</span></h2>
+                    <p>From residential villa plots to integrated townships, explore our diverse portfolio of premium
+                        real estate developments.</p>
+                </div>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="residential">Villa Plots</button>
+                    <button class="filter-btn" data-filter="farmland">Farm Lands</button>
+                    <button class="filter-btn" data-filter="apartment">Apartments</button>
+                    <button class="filter-btn" data-filter="township">Townships</button>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project cards will be dynamically populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="investments" class="investments">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Invest in Your <span>Future</span></h2>
+                    <p>Whether you're seeking long-term growth or immediate returns, our curated projects are tailored
+                        to deliver unmatched value.</p>
+                </div>
+                <div class="investment-content">
+                    <div class="benefits">
+                        <div class="benefit-item">
+                            <img src="https://api.iconify.design/lucide:trending-up.svg" alt="Returns"
+                                class="benefit-icon">
+                            <div>
+                                <h4>Assured Returns</h4>
+                                <p>Our strategically located properties consistently deliver above-market appreciation
+                                    and rental yields.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <img src="https://api.iconify.design/lucide:compass.svg" alt="Location"
+                                class="benefit-icon">
+                            <div>
+                                <h4>Prime Locations</h4>
+                                <p>Every Surya Group project is situated in high-growth corridors with excellent
+                                    connectivity and infrastructure.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <img src="https://api.iconify.design/lucide:shield.svg" alt="Legal" class="benefit-icon">
+                            <div>
+                                <h4>Legally Verified Properties</h4>
+                                <p>Complete peace of mind with our triple-verification process ensuring clear titles and
+                                    approvals.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <img src="https://api.iconify.design/lucide:check-circle.svg" alt="Support"
+                                class="benefit-icon">
+                            <div>
+                                <h4>End-to-End Support</h4>
+                                <p>From selection to documentation, our expert team guides you throughout your
+                                    investment journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="investment-opportunities">
+                        <div class="opportunity-card highlight">
+                            <h4>Early Bird Advantage</h4>
+                            <p>Get in early on our upcoming developments with special pre-launch pricing.</p>
+                            <div class="opportunity-footer">
+                                <span class="price">Starts from ₹25 Lakhs</span>
+                                <span class="tag">Limited Time</span>
+                            </div>
+                        </div>
+                        <div class="opportunity-card">
+                            <h4>SIP in Real Estate</h4>
+                            <p>Systematic investment plans for those looking to build wealth gradually.</p>
+                            <div class="opportunity-footer">
+                                <span class="price">From ₹50,000/month</span>
+                                <span class="tag">Flexible Terms</span>
+                            </div>
+                        </div>
+                        <div class="opportunity-card">
+                            <h4>Portfolio Diversification</h4>
+                            <p>Custom packages across residential, commercial and land investments.</p>
+                            <div class="opportunity-footer">
+                                <span class="price">Personalized Options</span>
+                                <span class="tag">Expert Advisory</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Let's Build Your <span>Future Together</span></h2>
+                    <p>Have a question or want to know more? Fill out the form below and our experts will get in touch.
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <span id="name-error" class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                                <span id="email-error" class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span id="phone-error" class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                                <span id="message-error" class="error-message"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                                <img src="https://api.iconify.design/lucide:send.svg" alt="Send" width="20" height="20">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <h3>Contact Information</h3>
+                            <div class="info-item">
+                                <img src="https://api.iconify.design/lucide:map-pin.svg" alt="Location"
+                                    class="info-icon">
+                                <div>
+                                    <h4>Corporate Office</h4>
+                                    <p>123 Business Park, Whitefield<br>Bengaluru, Karnataka 560066<br>India</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <img src="https://api.iconify.design/lucide:phone.svg" alt="Phone" class="info-icon">
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91 98765 43210</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <img src="https://api.iconify.design/lucide:mail.svg" alt="Email" class="info-icon">
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>info@suryagroup.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-container">
+                            <h3>Find Us</h3>
+                            <div class="map-placeholder">
+                                <p>Interactive map would be displayed here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://api.iconify.design/lucide:building-2.svg" alt="Logo" width="32" height="32">
+                        <span>Surya Group</span>
+                    </div>
+                    <p>Building tomorrow's skyline with today's vision. Surya Group offers premium real estate
+                        opportunities with exceptional returns.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <img src="https://api.iconify.design/lucide:facebook.svg" alt="Facebook" width="20"
+                                height="20">
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <img src="https://api.iconify.design/lucide:twitter.svg" alt="Twitter" width="20"
+                                height="20">
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <img src="https://api.iconify.design/lucide:instagram.svg" alt="Instagram" width="20"
+                                height="20">
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <img src="https://api.iconify.design/lucide:linkedin.svg" alt="LinkedIn" width="20"
+                                height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#investments">Investments</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Projects</h3>
+                        <ul>
+                            <li><a href="#projects">Villa Plots</a></li>
+                            <li><a href="#projects">Farm Lands</a></li>
+                            <li><a href="#projects">Apartments</a></li>
+                            <li><a href="#projects">Townships</a></li>
+                            <li><a href="#projects">Commercial</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to get the latest updates on new projects and investment opportunities.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email">
+                            <button aria-label="Subscribe">
+                                <img src="https://api.iconify.design/lucide:arrow-right.svg" alt="Subscribe" width="20"
+                                    height="20">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Surya Group of Companies. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <img src="https://api.iconify.design/lucide:chevron-up.svg" alt="Up" width="24" height="24">
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
