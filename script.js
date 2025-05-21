@@ -2,6 +2,7 @@
 const projects = [
     {
         id: 1,
+<<<<<<< HEAD
         title: "Skandhasiri Enclave",
         description: "premium residential villa plots with modern amenities.",
         location: "Vaddarahalli Village, Doddaballapura",
@@ -15,17 +16,68 @@ const projects = [
         description: "Picturesque farmlands perfect for weekend homes and agriculture.",
         location: "Bengaluru Rural",
         imageUrl: "https://content.jdmagicbox.com/comp/def_content/organic-farms/organic-farms-4-organic-farms-4-9hl2y.jpg",
+=======
+        title: "Surya Enclave",
+        description: "Luxury villa plots in a gated community with premium amenities.",
+        location: "Hyderabad Outskirts",
+        imageUrl: "https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        category: "residential",
+        features: ["24/7 Security", "Club House", "Park & Playground", "Avenue Plantation"]
+    },
+    {
+        id: 2,
+        title: "Green Valley Farms",
+        description: "Picturesque farmlands perfect for weekend homes and agriculture.",
+        location: "Bengaluru Rural",
+        imageUrl: "https://images.pexels.com/photos/1030857/pexels-photo-1030857.jpeg?auto=compress&cs=tinysrgb&w=1200",
+>>>>>>> 5624f97c560449d467cd82a77dd41c7990b3f834
         category: "farmland",
         features: ["Organic Soil", "Water Sources", "Farm Development", "Legal Clearance"]
     },
     {
         id: 3,
+<<<<<<< HEAD
         title: "Kousthubham Layout",
         description: "Modern apartments with stunning city views and smart home features.",
         location: "Devanahalli, Bangalore, Karnataka",
         imageUrl: "https://images.pexels.com/photos/681368/pexels-photo-681368.jpeg?auto=compress&cs=tinysrgb&w=1200",
         category: "apartment",
         features: ["Smart Home", "Fitness Center", "Swimming Pool", "Parking"]
+=======
+        title: "Horizon Heights",
+        description: "Modern apartments with stunning city views and smart home features.",
+        location: "Mumbai Suburbs",
+        imageUrl: "https://images.pexels.com/photos/681368/pexels-photo-681368.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        category: "apartment",
+        features: ["Smart Home", "Fitness Center", "Swimming Pool", "Parking"]
+    },
+    {
+        id: 4,
+        title: "Surya Town",
+        description: "Comprehensive township with residential, commercial and recreational spaces.",
+        location: "Chennai Outskirts",
+        imageUrl: "https://images.pexels.com/photos/5009673/pexels-photo-5009673.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        category: "township",
+        features: ["Mixed Development", "Schools & Hospitals", "Commercial Area", "Sports Complex"]
+    },
+    {
+        id: 5,
+        title: "Lakeside Villas",
+        description: "Premium villa plots with serene lake views and luxury amenities.",
+        location: "Pune Outskirts",
+        imageUrl: "https://images.pexels.com/photos/280232/pexels-photo-280232.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        category: "residential",
+        features: ["Lake View", "Private Gardens", "Community Center", "Walking Trails"]
+    },
+    {
+        id: 6,
+        title: "Sunset Meadows",
+        description: "Organic farmlands with rich soil and water resources for agriculture.",
+        location: "Mysore Rural",
+        imageUrl: "https://images.pexels.com/photos/695571/pexels-photo-695571.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        category: "farmland",
+        features: ["Fertile Land", "Fruit Orchards", "Farm House Plot", "Road Access"]
+>>>>>>> 5624f97c560449d467cd82a77dd41c7990b3f834
     }
 ];
 
