@@ -1,0 +1,133 @@
+/* Basic Reset and Transitions */
+.header {
+    animation: slideDown 0.5s ease-out forwards;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: transparent;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.desktop-nav a, .mobile-nav a {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.desktop-nav a:hover, .mobile-nav a:hover {
+    color: #007BFF;
+    transform: scale(1.05);
+}
+
+/* Mobile Nav - hidden by default */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* Toggle Class for Mobile Menu Active */
+.header.active .mobile-nav {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+/* Animate into X */
+.header.active .mobile-menu-btn span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.header.active .mobile-menu-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.active .mobile-menu-btn span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsive Display */
+@media (min-width: 768px) {
+    .mobile-menu-btn,
+    .mobile-nav {
+        display: none;
+    }
+    .desktop-nav {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+
+/* Keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.animate-slide-up {
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+.animate-zoom-in {
+  opacity: 0;
+  animation: zoomIn 1.2s ease forwards;
+}
+
+/* Delays for staggering */
+.delay-1 {
+  animation-delay: 0.4s;
+}
+
+.delay-2 {
+  animation-delay: 0.8s;
+}
+
+.delay-3 {
+  animation-delay: 1.2s;
+}
+
+/* Optional: Smoother load */
+.hero-content > * {
+  will-change: transform, opacity;
+}
