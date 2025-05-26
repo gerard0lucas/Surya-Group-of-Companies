@@ -5,7 +5,7 @@ const projects = [
         title: "Skandhasiri Enclave",
         description: "premium residential villa plots with modern amenities.",
         location: "Vaddarahalli Village, Doddaballapura",
-        imageUrl: "https://royalskyproperties.com/assets/img/WhatsApp%20Image%202024-04-19%20at%204.43.20%20PM.jpeg",
+        imageUrl: "./assets/skandhssiri.JPG",
         category: "residential",
         features: ["24/7 Security", "30 mins to Bangalore Airport", "45–60 mins to Hebbal, ITPL.", "10 mins to Ghati Subramanya Temple"]
     },
@@ -13,8 +13,8 @@ const projects = [
         id: 2,
         title: "Manor Farms",
         description: "Picturesque farmlands perfect for weekend homes and agriculture.",
-        location: "Bengaluru Rural",
-        imageUrl: "https://content.jdmagicbox.com/comp/def_content/organic-farms/organic-farms-4-organic-farms-4-9hl2y.jpg",
+        location: "Doddaballapur, Bangalore",
+        imageUrl: "./assets/monar farms.JPG",
         category: "farmland",
         features: ["Organic Soil", "Water Sources", "Farm Development", "Legal Clearance"]
     },
@@ -23,7 +23,7 @@ const projects = [
         title: "Kousthubham Layout",
         description: "Modern apartments with stunning city views and smart home features.",
         location: "Devanahalli, Bangalore, Karnataka",
-        imageUrl: "https://images.pexels.com/photos/681368/pexels-photo-681368.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        imageUrl: "https://housing-images.n7net.in/012c1500/478b2a1189928842c0b1707f3febe51f/v0/medium.jpeg",
         category: "apartment",
         features: ["Smart Home", "Fitness Center", "Swimming Pool", "Parking"]
     }
