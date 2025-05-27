@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investment Opportunities - Surya Group of Companies</title>
-    <meta name="description" content="Discover premium real estate investment opportunities with Surya Group of Companies. From assured returns to prime locations, explore our investment options.">
+    <meta name="description"
+        content="Discover premium real estate investment opportunities with Surya Group of Companies. From assured returns to prime locations, explore our investment options.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./animate.css">
 </head>
+
 <body>
     <header class="header scrolled">
         <div class="container">
@@ -48,8 +51,7 @@
             <div class="container">
                 <div class="heroflex">
                     <div style="text-align: center; margin-top: 50px" class="hero-content animate-fade-in">
-                        <h1 class="animate-slide-up">
-                            Our<br /><span>Investment</span>
+                        <h1 class="animate-slide-up">Investment<br /><span>Opportunities</span>
                         </h1>
                     </div>
                 </div>
@@ -60,37 +62,45 @@
         <section id="investments" class="investments" style="padding-top: 4rem;">
             <div class="container">
                 <div class="section-header">
-                   
-                    <p class="text-lg text-gray-600">Whether you're seeking long-term growth or immediate returns, our curated projects are tailored to deliver unmatched value.</p>
+
+                    <p class="text-lg text-gray-600">Whether you're seeking long-term growth or immediate returns, our
+                        curated projects are tailored to deliver unmatched value.</p>
                 </div>
                 <div class="investment-content">
                     <div class="benefits">
                         <div class="benefit-item">
-                            <img src="https://api.iconify.design/lucide:trending-up.svg" alt="Returns" class="benefit-icon">
+                            <img src="https://api.iconify.design/lucide:trending-up.svg" alt="Returns"
+                                class="benefit-icon">
                             <div>
                                 <h4>Assured Returns</h4>
-                                <p>Our strategically located properties consistently deliver above-market appreciation and rental yields.</p>
+                                <p>Our strategically located properties consistently deliver above-market appreciation
+                                    and rental yields.</p>
                             </div>
                         </div>
                         <div class="benefit-item">
-                            <img src="https://api.iconify.design/lucide:compass.svg" alt="Location" class="benefit-icon">
+                            <img src="https://api.iconify.design/lucide:compass.svg" alt="Location"
+                                class="benefit-icon">
                             <div>
                                 <h4>Prime Locations</h4>
-                                <p>Every Surya Group project is situated in high-growth corridors with excellent connectivity and infrastructure.</p>
+                                <p>Every Surya Group project is situated in high-growth corridors with excellent
+                                    connectivity and infrastructure.</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <img src="https://api.iconify.design/lucide:shield.svg" alt="Legal" class="benefit-icon">
                             <div>
                                 <h4>Legally Verified Properties</h4>
-                                <p>Complete peace of mind with our triple-verification process ensuring clear titles and approvals.</p>
+                                <p>Complete peace of mind with our triple-verification process ensuring clear titles and
+                                    approvals.</p>
                             </div>
                         </div>
                         <div class="benefit-item">
-                            <img src="https://api.iconify.design/lucide:check-circle.svg" alt="Support" class="benefit-icon">
+                            <img src="https://api.iconify.design/lucide:check-circle.svg" alt="Support"
+                                class="benefit-icon">
                             <div>
                                 <h4>End-to-End Support</h4>
-                                <p>From selection to documentation, our expert team guides you throughout your investment journey.</p>
+                                <p>From selection to documentation, our expert team guides you throughout your
+                                    investment journey.</p>
                             </div>
                         </div>
                     </div>
@@ -123,6 +133,103 @@
                 </div>
             </div>
         </section>
+
+        <section id="investor-contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Become an <span>Investor Today</span></h2>
+                    <p>Looking to grow your wealth through real estate? Fill out this form and our investment experts
+                        will reach out to you with the best opportunities.</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-form-wrapper">
+                        <form id="investor-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <span id="name-error" class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                                <span id="email-error" class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span id="phone-error" class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="investment-range">Investment Range (in ₹)</label>
+                                <input type="text" id="investment-range" name="investment-range"
+                                    placeholder="e.g. 10L - 50L" required>
+                                <span id="investment-error" class="error-message"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Tell Us Your Investment Goals</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Briefly explain your expectations..." required></textarea>
+                                <span id="message-error" class="error-message"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Submit Interest
+                                <img src="https://api.iconify.design/lucide:send.svg" alt="Send" width="20" height="20">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="contact-info" style="max-width: 700px; margin: auto; padding: 20px;">
+                        <div class="info-card"
+                            style="background: #f9f9f9; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
+                            <h3 style="margin-bottom: 20px;">Contact Our Investment Desk</h3>
+
+                            <div class="info-item"
+                                style="display: flex; gap: 15px; align-items: center; margin-bottom: 15px;">
+                                <img src="https://api.iconify.design/lucide:map-pin.svg" alt="Location"
+                                    style="width: 24px; height: 24px;">
+                                <div>
+                                    <h4 style="margin: 0;">Office Location</h4>
+                                    <p style="margin: 0;">#282, 2nd Main Road, Talacauvery Layout, Amruthahalli,
+                                        Bangaluru – 560092</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item"
+                                style="display: flex; gap: 15px; align-items: center; margin-bottom: 15px;">
+                                <img src="https://api.iconify.design/lucide:phone.svg" alt="Phone"
+                                    style="width: 24px; height: 24px;">
+                                <div>
+                                    <h4 style="margin: 0;">Phone</h4>
+                                    <p style="margin: 0;">+91 98447 16777</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item"
+                                style="display: flex; gap: 15px; align-items: center; margin-bottom: 15px;">
+                                <img src="https://api.iconify.design/lucide:mail.svg" alt="Email"
+                                    style="width: 24px; height: 24px;">
+                                <div>
+                                    <h4 style="margin: 0;">Email</h4>
+                                    <p style="margin: 0;">invest@suryagroupofcompanies.in</p>
+                                </div>
+                            </div>
+                            <!-- Embedded Map -->
+                            <div class="map-container" style="margin-top: 20px; border-radius: 12px; overflow: hidden;">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7772.971064405613!2d77.59365308972667!3d13.068385800030633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae182f8da1b0f1%3A0xcf4582d810852baa!2sTalacauvery%20Layout%2C%20Amrutahalli%2C%20Byatarayanapura%2C%20Bengaluru%2C%20Karnataka%20560092!5e0!3m2!1sen!2sin!4v1748239635138!5m2!1sen!2sin"
+                                    width="100%" height="350" style="border:0; width:100%; height:250px;"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <footer class="footer">
@@ -133,19 +240,24 @@
                         <img src="https://api.iconify.design/lucide:building-2.svg" alt="Logo" width="32" height="32">
                         <span>Surya Group</span>
                     </div>
-                    <p>Building tomorrow's skyline with today's vision. Surya Group offers premium real estate opportunities with exceptional returns.</p>
+                    <p>Building tomorrow's skyline with today's vision. Surya Group offers premium real estate
+                        opportunities with exceptional returns.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook">
-                            <img src="https://api.iconify.design/lucide:facebook.svg" alt="Facebook" width="20" height="20">
+                            <img src="https://api.iconify.design/lucide:facebook.svg" alt="Facebook" width="20"
+                                height="20">
                         </a>
                         <a href="#" aria-label="Twitter">
-                            <img src="https://api.iconify.design/lucide:twitter.svg" alt="Twitter" width="20" height="20">
+                            <img src="https://api.iconify.design/lucide:twitter.svg" alt="Twitter" width="20"
+                                height="20">
                         </a>
                         <a href="#" aria-label="Instagram">
-                            <img src="https://api.iconify.design/lucide:instagram.svg" alt="Instagram" width="20" height="20">
+                            <img src="https://api.iconify.design/lucide:instagram.svg" alt="Instagram" width="20"
+                                height="20">
                         </a>
                         <a href="#" aria-label="LinkedIn">
-                            <img src="https://api.iconify.design/lucide:linkedin.svg" alt="LinkedIn" width="20" height="20">
+                            <img src="https://api.iconify.design/lucide:linkedin.svg" alt="LinkedIn" width="20"
+                                height="20">
                         </a>
                     </div>
                 </div>
@@ -176,7 +288,8 @@
                         <div class="newsletter-form">
                             <input type="email" placeholder="Your email">
                             <button aria-label="Subscribe">
-                                <img src="https://api.iconify.design/lucide:arrow-right.svg" alt="Subscribe" width="20" height="20">
+                                <img src="https://api.iconify.design/lucide:arrow-right.svg" alt="Subscribe" width="20"
+                                    height="20">
                             </button>
                         </div>
                     </div>
@@ -194,4 +307,5 @@
 
     <script src="../script.js"></script>
 </body>
+
 </html>

@@ -7,7 +7,7 @@ const projects = [
         location: "Vaddarahalli Village, Doddaballapura",
         imageUrl: "./assets/skandhssiri.JPG",
         category: "residential",
-        features: ["24/7 Security", "30 mins to Bangalore Airport", "45–60 mins to Hebbal, ITPL.", "10 mins to Ghati Subramanya Temple"]
+        features: ["DPA Approved", "30 mins to International Airport", "Rain Water Harvesting", "10 mins from ITIR"]
     },
     {
         id: 2,
@@ -16,16 +16,16 @@ const projects = [
         location: "Doddaballapur, Bangalore",
         imageUrl: "./assets/monar farms.JPG",
         category: "farmland",
-        features: ["Organic Soil", "Water Sources", "Farm Development", "Legal Clearance"]
+        features: ["Organic Soil", "Water Sources", "Farm Development", "Cleared Title"]
     },
     {
         id: 3,
         title: "Kousthubham Layout",
-        description: "Modern apartments with stunning city views and smart home features.",
+        description: "Modern villa plots in tranquil settings, ready for smart, customized living.",
         location: "Devanahalli, Bangalore, Karnataka",
         imageUrl: "https://housing-images.n7net.in/012c1500/478b2a1189928842c0b1707f3febe51f/v0/medium.jpeg",
         category: "apartment",
-        features: ["Smart Home", "Fitness Center", "Swimming Pool", "Parking"]
+        features: ["Underground Telecom and electric lines", "Kids Play area", "Over head water tank", "Near to  Kempegowda International Airport"]
     }
 ];
 
