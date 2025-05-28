@@ -23,8 +23,8 @@ const projects = [
         title: "Kousthubham Layout",
         description: "Modern villa plots in tranquil settings, ready for smart, customized living.",
         location: "Devanahalli, Bangalore, Karnataka",
-        imageUrl: "https://housing-images.n7net.in/012c1500/478b2a1189928842c0b1707f3febe51f/v0/medium.jpeg",
-        category: "apartment",
+        imageUrl: "./assets/kousthu.jpg",
+        category: "Villa Plots",
         features: ["Underground Telecom and electric lines", "Kids Play area", "Over head water tank", "Near to  Kempegowda International Airport"]
     }
 ];
